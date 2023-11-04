@@ -24,3 +24,7 @@ resources:
 steps:
   - checkout: nuget
   - checkout: Exercises
+  - template: common.yml@Exercises
+    parameters:
+      buildType: 'nuget'
+
